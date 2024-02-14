@@ -43,7 +43,12 @@ echo Chocolatey is ready to begin installing packages!
 pause
 
 @rem ----[ Whatever you want to install, place it below this point, each item on its own line (to make it easier to find later on. ] ----
-
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+choco feature enable -n=allowGlobalConfirmation
+choco feature enable -n useFipsCompliantChecksums
+Add-WUServiceManager -ServiceID 7971f918-a847-4430-9279-4a52d1efe18d -Confirm:$false
+Install-WindowsUpdate -MicrosoftUpdate -AcceptAll 
+Get-WuInstall -AcceptAll -IgnoreReboot
 choco install winrar
 choco install 7zip.install
 choco install firefox
@@ -90,7 +95,8 @@ choco install librewolf
 choco install tor
 choco install tor-browser
 choco install protonvpn
-
+choco upgrade all
+choco install pswindowsupdate
 @rem ---[You can add as many programs here as you desire!]----
 
 pause
