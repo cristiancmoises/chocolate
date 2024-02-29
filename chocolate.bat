@@ -95,7 +95,6 @@ choco install librewolf
 choco install tor
 choco install tor-browser
 choco install protonvpn
-choco upgrade all
 choco install pswindowsupdate
 @rem ---[You can add as many programs here as you desire!]----
 
