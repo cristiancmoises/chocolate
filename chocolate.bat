@@ -46,56 +46,48 @@ pause
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 choco feature enable -n=allowGlobalConfirmation
 choco feature enable -n useFipsCompliantChecksums
-powershell Add-WUServiceManager -ServiceID 7971f918-a847-4430-9279-4a52d1efe18d -Confirm:$false
-powershell Install-WindowsUpdate -MicrosoftUpdate -AcceptAll 
-Get-WuInstall -AcceptAll -IgnoreReboot
-choco install winrar
-choco install 7zip.install
-choco install firefox
-choco install dotnetfx
-choco install flashplayerplugin
-choco install vlc
-choco install chocolatey-core.extension
-choco install anydesk.install
-choco install chocolatey-dotnetfx.extension
-choco install dotnet4.7
-choco install dotnet4.7.1
-choco install dotnet4.6
-choco install dotnet4.6.2
-choco install dotnet4.6.1
-choco install dotnet4.5
-choco install dotnet4.0
-choco install dotnet3.5
-choco install chromium
-choco install nextcloud-client
-choco install gimp
-choco install gimp-data-extras
-choco install photogimp
-choco install krita
-choco install everything
-choco install adobereader
-choco install flashplayeractivex
-choco install jre8
-choco install chocolatey-windowsupdate.extension
-choco install notepadplusplus.install
-choco install git.install
-choco install adobeshockwaveplayer
-choco install sumatrapdf
-choco install steam-client
-choco install k-litecodecpackfull
-choco install thunderbird
-choco install keepass.install
-choco install wireshark
-choco install audacity
-choco install obs-studio
-choco install obs-virtualcam
-choco install droidcamclient
-choco install openshot
-choco install librewolf
-choco install tor
-choco install tor-browser
-choco install protonvpn
-choco install pswindowsupdate
+choco install winrar 
+7zip.install 
+firefox 
+dotnetfx 
+flashplayerplugin 
+vlc
+chocolatey-core.extension
+anydesk.install
+chocolatey-dotnetfx.extension
+dotnet4.7
+dotnet4.7.1
+dotnet4.6
+dotnet4.6.2
+dotnet4.6.1
+dotnet4.5
+dotnet4.0
+dotnet3.5
+chromium
+nextcloud-client
+gimp
+gimp-data-extras
+photogimp
+krita
+everything
+adobereader
+flashplayeractivex
+jre8
+chocolatey-windowsupdate.extension
+notepadplusplus.install
+git.install
+adobeshockwaveplayer
+steam-client
+k-litecodecpackfull
+keepass.install
+audacity
+obs-studio
+obs-virtualcam
+droidcamclient
+openshot
+tor-browser
+protonvpn
+pswindowsupdate
 @rem ---[You can add as many programs here as you desire!]----
 
 pause
