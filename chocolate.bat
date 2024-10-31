@@ -65,6 +65,7 @@ choco install ventoy -y
 choco install googleearthpro -y
 choco install bulk-crap-uninstaller -y
 choco install nircmd -y
+choco install pswindowsupdate -y
 choco install mullvad-app -y
 choco install keepass -y 
 choco install libreoffice -y
