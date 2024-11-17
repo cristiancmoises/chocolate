@@ -44,7 +44,7 @@ choco install obs-studio -y
 choco install krita -y
 choco install gimp -y
 choco install photogimp -y
-# choco install crystaldiskinfo -y
+choco install crystaldiskinfo -y
 choco install openshot -y
 choco install ungoogled-chromium -y
 choco install everything -y
@@ -53,15 +53,15 @@ choco install adobereader -y
 choco install silverlight -y
 choco install jre8 -y
 choco install microsoft-teams-new-bootstrapper -y 
-# choco install anydesk -y
+choco install anydesk -y
 choco install mattermost-desktop -y
 choco install element-desktop -y
 choco install libreoffice -y
-# choco install wireshark -y
+choco install wireshark -y
 choco install pspad -y
 choco install etcher -y
 choco install ventoy -y
-# choco install qgis -y
+choco install qgis -y
 choco install googleearthpro -y
 choco install bulk-crap-uninstaller -y
 choco install nircmd -y
@@ -74,7 +74,7 @@ choco install microsoft-windows-terminal -y
 choco install powershell -y
 choco install veracrypt -y
 choco install gpg4win -y
-# choco install keybase -y
+choco install keybase -y
 choco install advanced-ip-scanner -y
 
 echo All installations are complete!
